@@ -1,0 +1,387 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Comic Neue', cursive;
+    font-weight: bold;
+}
+
+.navicon {
+    display: none;
+}
+
+section {
+    min-height: 80vh;
+    padding: 50px;
+}
+
+body {
+    background-color: #20a1bbcb;
+    /* background-color: black; */
+}
+
+header {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    background-color: rgba(255, 255, 255, 0.621);
+    /* background-color: rgba(0, 0, 0, 0.546); */
+    justify-content: center;
+    /* height: 40px; */
+    padding: 10px;
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    box-shadow: 0 0 30px grey;
+    border-radius: 10px;
+}
+
+.navi {
+    display: flex;
+    justify-content: space-between;
+    gap: 50px;
+    text-decoration: none;
+}
+
+.first {
+    display: flex;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.profileimg img {
+    margin-top: 100px;
+    width: 400px;
+    height: 500px;
+    border: 5px solid white;
+    /* #266150 */
+    border-radius: 10px;
+    /* box-shadow: 0 0 45px grey; */
+}
+
+.profile {
+    margin-top: 120px;
+    text-align: center;
+    line-height: 40px;
+}
+
+.profile h1 {
+    font-size: 80px;
+    font-weight: bolder;
+    line-height: 100px;
+    border-radius: 23px;
+    color: linear-gradient(145deg, #da09ff, #6d217a);
+}
+
+.profile p {
+    font-size: 15px;
+    margin-top: 20px;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+a {
+    text-decoration: none;
+    padding: 10px;
+    border-radius: 8px;
+    color: #266150
+}
+
+.nav a:hover {
+    background-color: #266150;
+    color: white;
+}
+
+i {
+    margin-right: 10px;
+    font-size: 20px;
+}
+
+.second {
+    background-color: #f9faf5;
+}
+
+progress {
+    width: 100%;
+    height: 40px;
+    background-color: #266150;
+    border-radius: 40px;
+    margin-top: 40px;
+}
+
+
+/* For Chrome or Safari */
+
+progress::-webkit-progress-bar {
+    background-color: #eeeeee76;
+    border-radius: 10px;
+}
+
+progress::-webkit-progress-value {
+    background-color: #266150 !important;
+    border-radius: 40px;
+}
+
+
+/* .contact{
+        margin: 50px;
+    } */
+
+.skill p {
+    font-size: 20px;
+}
+
+.second h1 {
+    text-align: center;
+    font-weight: bold;
+}
+
+.skill div {
+    margin-bottom: 20px;
+}
+
+.education h1 {
+    text-align: center;
+}
+
+.colleges {
+    margin: 40px;
+    line-height: 40px;
+}
+
+.colleges div {
+    padding: 20px;
+}
+
+.colleges h2 {
+    color: #266150;
+    font-weight: bold;
+}
+
+.colleges p {
+    color: black;
+}
+
+.certificates {
+    background-color: #f9faf5;
+}
+
+.certificates h1 {
+    text-align: center;
+}
+
+.certi {
+    margin: 40px;
+    line-height: 40px;
+}
+
+.certi div {
+    padding: 20px;
+}
+
+.projects h1 {
+    text-align: center;
+}
+
+.pro {
+    margin: 40px;
+    line-height: 40px;
+}
+
+.pro div {
+    padding: 20px;
+}
+
+.contactus {
+    background-color: #f9faf5;
+}
+
+.contactus h1 {
+    text-align: center;
+}
+
+.cont {
+    margin: 40px;
+    line-height: 40px;
+}
+
+.cont div {
+    padding: 20px;
+}
+
+@media screen and (max-width: 600px) {
+    .section {
+        padding: 0px;
+        margin: 0px;
+    }
+    .profileimg img {
+        width: 100%;
+        height: 400px;
+    }
+    .first {
+        margin-left: 0px;
+        padding: 20px;
+    }
+    .profile p {
+        margin-left: 0px;
+        margin-right: 0px;
+    }
+    .second {
+        padding: 20px;
+    }
+    .second h1 {
+        margin-bottom: 20px;
+    }
+    .cont {
+        margin: 0px;
+    }
+    .colleges {
+        margin: 0px;
+    }
+    .education {
+        padding: 10px;
+    }
+    .certificates {
+        padding: 10px;
+    }
+    .certi {
+        margin: 0px;
+    }
+    .projects {
+        padding: 10px;
+    }
+    .pro {
+        margin: 0px;
+    }
+    .contactus {
+        padding: 10px;
+    }
+    .profile {
+        margin-top: 10px;
+    }
+    .first {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .navi {
+        display: none;
+    }
+    .navicon {
+        display: block;
+        left: 10px;
+        margin-left: 10px;
+        margin-right: 250px;
+    }
+    .profileimg img {
+        margin-top: 50px;
+    }
+    /* h1{
+            margin-bottom: 40px;
+        } */
+}
+
+@media screen and (max-width: 600px) {
+    .navi a {
+        display: none;
+    }
+    .navi {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        background-color: white;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .navi.responsive {
+        position: relative;
+    }
+    .navi.responsive {
+        float: none;
+        top: 20px;
+        padding: 20px;
+    }
+    .navi.responsive a {
+        display: block;
+        padding: 0px;
+    }
+    .education img {
+        width: 300px;
+        height: 300px;
+    }
+    .certify img {
+        height: 300px;
+        width: 300px;
+    }
+    .project {
+        display: flex;
+        flex-wrap: wrap-reverse;
+    }
+    .project img {
+        width: 300px;
+        height: 300px;
+    }
+}
+
+.footer img {
+    height: 50px;
+    width: 50px;
+}
+
+.edu {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap-reverse;
+}
+
+.education img {
+    max-height: 600px;
+    max-width: 600px;
+}
+
+.certify {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap-reverse;
+}
+
+.certify img {
+    max-height: 600px;
+    max-width: 600px;
+}
+
+.project {
+    display: flex;
+    justify-content: space-between;
+    /* flex-wrap:wrap-reverse; */
+}
+
+.project img {
+    max-height: 600px;
+    max-width: 600px;
+}
+
+footer {
+    background-color: #f9faf5;
+    padding: 20px;
+    box-shadow: 0 0 45px grey;
+}
+
+.foot-nav {
+    display: flex;
+    flex-direction: column;
+}
+
+section h1 {
+    color: #6d217a;
+    font-weight: bold;
+    font-size: 35px;
+}
+
+.certificates h2 {
+    color: #6d217a;
+}
+
+.projects h2 {
+    color: #6d217a;
+}
